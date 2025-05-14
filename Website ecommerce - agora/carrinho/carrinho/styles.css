@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #D7D7D9;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #324001;
+    line-height: 1.6;
+}
+
+header {
+    background: #324001;
+    color: #D7D7D9;
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+header span {
+    position: relative;
+    padding: 0 1rem;
+}
+
+header span::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #A9BF04;
+    border-radius: 3px;
+}
+
+main {
+    background: #F5F5F5;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    flex: 1;
+    width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.page-title {
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #324001;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.page-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #A9BF04;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+.content {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+section {
+    flex: 1;
+    overflow-x: auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+aside {
+    min-width: 300px;
+    max-width: 350px;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead tr {
+    border-bottom: 3px solid #A9BF04;
+}
+
+table thead tr th {
+    text-align: left;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: #324001;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+table tbody tr {
+    border-bottom: 2px solid #D7D7D9;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table tbody tr td {
+    padding: 20px 0;
+    vertical-align: middle;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    border-radius: 8px;
+    width: 80px;
+    height: 96px;
+    object-fit: cover;
+    border: 2px solid #A9BF04;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.03);
+}
+
+.product .info {
+    margin-left: 20px;
+}
+
+.product .info .name {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #324001;
+}
+
+.product .info .category {
+    color: #6E8C03;
+    font-size: 0.9rem;
+}
+
+.qty {
+    background: #F0F0F0;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+    border: 1px solid #A9BF04;
+}
+
+.qty span {
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.qty button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    padding: 0 10px;
+    font-size: 20px;
+    height: 100%;
+    color: #324001;
+}
+
+.qty button:hover {
+    background: #A9BF04;
+    color: white;
+}
+
+.remove {
+    background: #D10E0A;
+    color: white;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.remove:hover {
+    background: #ff1a1a;
+    transform: rotate(90deg);
+}
+
+.box {
+    margin-bottom: 15px;
+    border: 2px solid #A9BF04;
+    background: white;
+    color: #324001;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.box header {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #A9BF04;
+    background: #6E8C03;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.box .info {
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+.box .info > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.box .info > div:last-child {
+    margin: 0;
+}
+
+.box .info button {
+    color: #324001;
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.box .info button:hover {
+    color: #6E8C03;
+}
+
+.cep-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.cep-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #A9BF04;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.cep-input input:focus {
+    border-color: #6E8C03;
+    box-shadow: 0 0 0 2px rgba(169, 191, 4, 0.2);
+}
+
+.cep-input button {
+    background: #324001;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.cep-input button:hover {
+    background: #6E8C03;
+}
+
+.box footer {
+    padding: 1rem;
+    background: #A9BF04;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #324001;
+}
+
+.checkout-btn {
+    border: 0;
+    padding: 1rem;
+    color: white;
+    background: #324001;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.checkout-btn:hover {
+    background: #6E8C03;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    aside {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+        max-width: none;
+    }
+    
+    table {
+        min-width: 600px;
+    }
+    
+    header {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    
+    .page-title {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - Roupa 1</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .produto-container {
+            max-width: 1200px;
+            margin: 150px auto 50px;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .produto-container img {
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .produto-detalhes {
+            max-width: 500px;
+        }
+
+        .produto-detalhes h2 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #324001;
+            margin-bottom: 1rem;
+        }
+
+        .produto-detalhes p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .preco {
+            font-size: 2rem;
+            color: #D10E0A;
+            margin: 1.5rem 0;
+            font-weight: 700;
+        }
+
+        .tamanhos {
+            margin-bottom: 2rem;
+        }
+
+        .tamanhos label {
+            margin-right: 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .tamanhos input {
+            margin-right: 8px;
+            transform: scale(1.2);
+        }
+
+        .tamanhos label[for] {
+            font-weight: normal;
+            margin-right: 20px;
+        }
+
+        .btn-comprar {
+            display: inline-block;
+            margin-top: 1rem;
+            background-color: #D10E0A;
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .35s ease;
+        }
+
+        .btn-comprar:hover {
+            background-color: #111;
+            transform: scale(1.05);
+        }
+
+        /* Header mantendo o estilo do site principal */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #324001;
+            padding: 14px 14%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all .35s ease;
+        }
+
+        .logo{
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .cabeçalho-link{
+            display: flex;
+            gap: 3rem;
+        }
+
+        .cabeçalho-link a{
+            color: white;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .cabeçalho-link a:hover{
+            color: #D10E0A;
+        }
+
+        .icon span{
+            font-size: 2rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        .icon span:hover{
+            color: #D10E0A;
+        }
+
+        @media (max-width: 768px) {
+            .produto-container {
+                flex-direction: column;
+                margin-top: 120px;
+                padding: 20px;
+            }
+            
+            .produto-container img {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            header {
+                padding: 14px 5%;
+            }
+            
+            .cabeçalho-link {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header igual ao site principal -->
+    <header>
+        <div class="logo">
+            <h1>Abelar</h1>
+        </div>
+
+        <div class="cabeçalho-link">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Estoque Novo</a></li>
+            <li><a href="#">Roupas</a></li>
+            <li><a href="../login/login/index.html">login</a></li>
+        </div>
+
+        <div class="icon">
+            <a href="../carrinho/carrinho/index.html">
+                <span><ion-icon name="bag-outline"></ion-icon></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Produto -->
+    <div class="produto-container">
+        <img src="../img/roupa1.jpg" alt="Roupa 1">
+
+        <div class="produto-detalhes">
+            <h2>jaqueta</h2>
+            <p>Camisa de algodão 100% com toque macio e caimento perfeito. Ideal para ocasiões casuais e sociais.</p>
+
+            <div class="preco">R$ 188,00</div>
+
+            <div class="tamanhos">
+                <label>Tamanho:</label>
+                <input type="radio" name="tamanho" value="P" id="p"> <label for="p">P</label>
+                <input type="radio" name="tamanho" value="M" id="m"> <label for="m">M</label>
+                <input type="radio" name="tamanho" value="G" id="g"> <label for="g">G</label>
+            </div>
+
+            <a class="btn-comprar" href="../carrinho/carrinho/index.html">Comprar</a>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

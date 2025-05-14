@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel-container">
+    <!-- Carrossel -->
+    <div class="carousel">
+        <div class="carousel-slide">
+            <img src="img/background1.jpg" alt="Slide 1">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/background2.jpg" alt="Slide 2">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/background3.jpg" alt="Slide 3">
+        </div>
+    </div>
+    
+    <!-- Conteúdo fixo sobre o carrossel -->
+    <div class="overlay-content">
+        <div class="Meio">
+            <h1>MODA</h1>
+            <h1>FEITA PARA VOCÊ</h1>
+            <P>PROMOÇÃO</P>
+           
+        </div>
+    </div>
+    
+    <!-- Header fixo -->
+    <header>
+    <div class="logo">
+        <h1>ABELAR</h1>
+    </div>
+
+    <div class="cabeçalho-link">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#estoque-novo">Novo</a></li> <!-- Alterado aqui -->
+        <li><a href="#">Roupas</a></li>
+        <!-- Botão login levando para a página login -->
+        <li><a href="login/login/index.html">login</a></li>
+    </div>
+
+    <!-- Botão Bag com link para o carrinho -->
+    <div class="icon">
+        <a href="carrinho/carrinho/index.html">
+            <span><ion-icon name="bag-outline"></ion-icon></span>
+        </a>
+    </div>
+</header>
+
+</div>
+    
+    <section>
+        <h1>NOVAS CATEGORIAS</h1>
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="img/Luck -1.png">
+            </div><!--cards-->
+
+            <div class="cards">
+                <img src="img/Luck-2.png">
+            </div><!--cards-->
+        </div><!--Container-card-1-->
+
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="img/Untitled - 2.png">
+            </div><!--cards-->
+
+            <div class="cards">
+                <img src="img/luck-4.png">
+            </div><!--cards-->
+        </div><!--Container-card-1-->
+
+        <div class="Container-card-1">
+            <div class="cards">
+                <img src="img/Untitled-3.png">
+            </div><!--cards-->
+
+            <div class="cards">
+                <img src="img/Untitled - 1.png">
+            </div><!--cards-->
+        </div><!--Container-card-1-->
+    </section>
+
+    <section class="cta">
+        <div class="text-cta">
+            <h6>VERÃO A VENDA</h6>
+            <h4>20% OFF<br>NOVAS CHEGADAS</h4>
+            <a href="#" class="btn">Compre agora</a>
+        </div><!--text-cta-->
+    </section><!--cta-->
+
+    <section id="estoque-novo"> <!-- Adicionado ID aqui -->
+        <h1>DESTAQUES</h1>
+        <div class="Container-roupas">
+           <div class="roupa">
+                <a href="produto/roupa1.html">
+                    <img src="img/roupa1.jpg" alt="">
+                </a>
+                <p>JAQUETA</p>
+                <h5>R$188</h5>
+                <ion-icon name="cart-outline"></ion-icon>
+            </div>
+        </div>
+    </section>
+
+    <section class="Contato" id="Contato">
+		<div class="meio-contato">
+			<h3>Quem nos somos?</h3>
+			<h5>Há 30 anos, a ABELAR veste pessoas com mais do que roupas – vestimos sonhos e histórias. Cada peça é pensada para exalar estilo, qualidade e elegância, acompanhando nossos clientes em momentos especiais e cotidianos. Agora, com um novo site moderno e responsivo, queremos levar essa experiência única para o mundo digital. Através de um sistema de vendas automáticas, integração com Instagram e WhatsApp, e pagamentos rápidos, nosso objetivo é tornar cada compra uma extensão do estilo e da personalidade de quem nos escolhe. ABELAR é mais que moda, é a essência de quem se permite brilhar.
+            </h5>
+			<div class="icons">
+				<a href="#"><i class='bx bxl-facebook-square' ></i></a>
+				<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+				<a href="#"><i class='bx bxl-twitter' ></i></a>
+			</div>
+		</div>
+
+		<div class="meio-contato">
+			<h3>Explore</h3>
+			<li><a href="#Casa">Casa</a></li>
+			<li><a href="#Destaque">Destaque</a></li>
+			<li><a href="#Novo">New</a></li>
+			<li><a href="#Contato">Contato</a></li>
+		</div>
+
+		<div class="meio-contato">
+             <h3>Nossos Serviços</h3>
+             <li><a href="#">Preços</a></li>
+            <li><a href="#">Frete Grátis</a></li>
+            <li><a href="#">Cartões de Presente</a></li>
+        </div>
+
+		<div class="meio-contato">
+            <h3>Compras</h3>
+            <li><a href="#">Loja de Roupas</a></li>
+            <li><a href="#">Tênis em Alta</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Promoções</a></li>
+        </div>
+
+	</section>
+
+	<div class="last-text">
+		<p>&copy; 2025 Todos os direitos reservados. Desenvolvido por <strong>João Pedro Silva dos Santos</strong>.</p>
+	</div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

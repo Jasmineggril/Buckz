@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abelar - Carrinho de Compras</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <span>Abelar</span>
+    </header>
+    <main>
+        <div class="page-title">Seu Carrinho</div>
+        <div class="content">
+            <section>
+                <table id="tabela-produtos">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="produto" data-preco="120.00">
+                            <td>
+                                <div class="product">
+                                    <img src="https://picsum.photos/100/120" alt="Produto">
+                                    <div class="info">
+                                        <div class="name">Camiseta Branca</div>
+                                        <div class="category">Vestuário</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="preco-unitario">R$ 120,00</td>
+                            <td>
+                                <div class="qty">
+                                    <button class="btn-diminuir"><i class="bx bx-minus"></i></button>
+                                    <span class="quantidade">1</span>
+                                    <button class="btn-aumentar"><i class="bx bx-plus"></i></button>
+                                </div>
+                            </td>
+                            <td class="preco-total">R$ 120,00</td>
+                            <td>
+                                <button class="remove" title="Remover item"><i class="bx bx-x"></i></button>
+                            </td>
+                        </tr>
+                        <tr class="produto" data-preco="85.50">
+                            <td>
+                                <div class="product">
+                                    <img src="https://picsum.photos/100/120" alt="Produto">
+                                    <div class="info">
+                                        <div class="name">Calça Jeans</div>
+                                        <div class="category">Vestuário</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="preco-unitario">R$ 85,50</td>
+                            <td>
+                                <div class="qty">
+                                    <button class="btn-diminuir"><i class="bx bx-minus"></i></button>
+                                    <span class="quantidade">1</span>
+                                    <button class="btn-aumentar"><i class="bx bx-plus"></i></button>
+                                </div>
+                            </td>
+                            <td class="preco-total">R$ 85,50</td>
+                            <td>
+                                <button class="remove" title="Remover item"><i class="bx bx-x"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <aside>
+                <div class="box">
+                    <header>Resumo da compra</header>
+                    <div class="info">
+                        <div><span>Sub-total</span><span id="subtotal">R$ 205,50</span></div>
+                        <div class="cep-input">
+                            <input type="text" id="cep" placeholder="Digite seu CEP" maxlength="8">
+                            <button id="calcular-frete">Calcular</button>
+                        </div>
+                        <div id="frete-info" style="display: none;">
+                            <span>Frete</span>
+                            <span id="valor-frete">R$ 0,00</span>
+                        </div>
+                        <div>
+                            <button>
+                                Adicionar cupom de desconto
+                                <i class="bx bx-right-arrow-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <footer>
+                        <span>Total</span>
+                        <span id="total-compra">R$ 205,50</span>
+                    </footer>
+                </div>
+                <button class="checkout-btn">Finalizar Compra</button>
+            </aside>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
